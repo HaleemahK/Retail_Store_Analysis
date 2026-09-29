@@ -152,3 +152,68 @@ These KPIs provide a high-level overview of business performance by summarizing 
 The dashboard includes Year, Customer Name and Product Name slicers that allows users to filter and interact with the data.
 
 These interactive filters ensure that KPIs, charts and visuals adapt instantly, giving stakeholders a flexible view by narrowing the focus on a specific Year, Customer Name or Product Name.
+
+# Key Analysis Findings
+
+The analysis of the retail store sales gave insights into performance, regional and time trends, profitability, and individual products.
+
+# 1. Performance Analysis
+- Total revenue reached **$1,776,850** across **1,000** orders, an *average* of about **$1,777** per order.
+- Total profit was **$848,772**, which is a profit margin of **47.8%**.
+- **Electronics** was the top category with **$1,529,200** in revenue, about **86%** of the total. *Wearables* brought in **$157,800** and *Accessories* **$89,850**.
+- **Laptops** earned the most revenue at **$623,000**, followed by **Smartphones** at **$545,600** and **Tablets** at **$360,600**.
+- **Robert Brown** was the highest-spending customer at **$385,750**. **Jane Smith** was the lowest at **$323,300.**
+- **PayPal** was the leading payment type at **$415,400**, followed by **Credit Card** at **$392,100.** **Crypto** was the lowest at **$288,950.**
+- Among the five salespeople, **Charlie Black** was highest at **$204,750** and Bob White was lowest at **$143,114.**
+  
+# 2. Regional and Temporal Trends
+- The **West** region contributed the most, with **36.24%** of revenue (about *$644K*). *South* followed with **21.93%**, then Midwest with **21.55%** and *East* with **20.28%**.
+- With *2023 and 2024* combined, monthly revenue was lowest in **February** at about **$120K** and highest in **July and December** at about **$175K.**
+- **April** was also a strong month at about **$165K**, and it is when monthly profit peaked at about **$90K**.
+- Monthly profit stayed between about **$55K and $90K**, so profit moved less than revenue from month to month.
+- In the year, quarter and month view, revenue in both 2023 and 2024 rose and fell between roughly **$55K and $100K** a month, with no clear steady climb.
+  
+# 3. Profitability Insights
+- **Smartphones** generated the highest profit at **$286,886**, just ahead of **Laptops** at **$286,103**. **Laptops** earned **$77,400** more in revenue, so Smartphones turned each sale into more profit.
+- **Smartphones** had the best profit margin at **52.6%**. **Headphones** had the lowest at **39.6%**.
+- **Economy** shipping made up **94.24%** of the *ship mode* profit share. *Express* contributed **3.10%** and *Standard* **2.65%**.
+- Electronics products (Laptops, Smartphones and Tablets) produced $741,020 of the $848,772 total profit, about 87%.
+  
+# 4. Product-Specific Analysis
+<img width="728" height="239" alt="image" src="https://github.com/user-attachments/assets/796e0c4c-93bf-4a33-a7c0-08921878e1ce" />
+
+- Laptops and Smartphones together bring in $1,168,600, about *66%* of all revenue.
+- Tablets rank third with $360,600 in revenue and a *46.6%* margin.
+- Smartwatches, the only Wearables product, beat Headphones on revenue, profit and margin. Headphones, the only Accessories product, is the smallest line.
+  
+# Overall Insights
+- Healthy profitability. Almost half of every revenue dollar (47.8%) ends up as profit.
+- Electronics carries the store. Laptops, Smartphones and Tablets bring in about 86% of revenue.
+- Smartphones are the most efficient product. They lead on profit and margin while earning less revenue than Laptops.
+- The West is the strongest market. It leads by a wide gap, while the other three regions sit close together at 20% to 22%.
+- Sales change through the year. February is the weakest month and July and December are the strongest, which points to a need for seasonal planning.
+- Revenue is spread evenly across customers. Each of the five customers accounts for roughly 18% to 22% of the total, so no single customer dominates.
+- Economy shipping dominates. Express and Standard together make up under 6% of the profit share.
+  
+# Recommendations
+
+Based on the analysis, the following steps can help strengthen retail strategy and revenue growth.
+
+- Keep investing in Laptops and Smartphones through steady restocking and targeted promotion, since they drive most of the revenue and profit.
+- Give Smartphones extra promotion, as they earn the highest margin of any product.
+- Review Headphone pricing and costs to lift its 39.6% margin, and consider bundling it with Smartphone and Laptop sales.
+- Grow the Wearables line. Smartwatch margin is close to Laptops, but it makes up only about *9%* of revenue.
+- Plan stock and campaigns around the calendar: prepare for the July and year-end peaks, and run promotions in February and the other low months.
+- Keep marketing and distribution focused on the West, and test what works there in the East, Midwest and South.
+- Look at why Express and Standard shipping are so little used, and check whether pricing or delivery options could be improved.
+  
+# Limitations
+
+This analysis is based on a dataset that appears to be fictional, and the following points may affect how far the insights can be relied on.
+
+– The dataset is small, with 1,000 orders over two years, and includes only five customers and five salespeople. Results reflect those individuals more than broad customer behavior.
+– The state map uses the same revenue range as the customer chart ($323,300 to $385,750), so it seems to repeat customer data rather than add a separate view.
+– The five salesperson values add up to $848,772, which equals total profit rather than total revenue. That chart may show profit under a revenue label and should be checked against the source data.
+– Monthly charts combine 2023 and 2024 unless a year is selected, and monthly figures were read from charts, so they are approximate.
+– The ship mode chart shows each mode's share of profit, not a margin rate for each mode.
+– There is no data on promotions, returns, operating costs or outside conditions such as the economy.
