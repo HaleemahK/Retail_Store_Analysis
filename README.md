@@ -91,13 +91,13 @@ Created calculated measures using DAX (Data Analysis Expressions) to define key 
 # Data Analysis and Visualization
 This page provides a comprehensive view of the company's sales performance across products, customers, regions, and payment methods. It enables stakeholders, marketers, sales teams, and company directors to identify top-performing products, customers, and regions while monitoring revenue generation and profitability trends.
 
-**Page 1: Performance Analysis and Regional Trends**
+# **Page 1: Performance Analysis and Regional Trends**
 
 **Business Goal:** Analyze overall business performance by monitoring revenue, profit, order volume, top-performing regions, and product categories. This page is designed to help stakeholders understand sales performance across products, customers, salespersons, regions, and payment methods, enabling data-driven decisions to improve revenue growth and profitability.
 
 <img width="1314" height="518" alt="Retail Store_1" src="https://github.com/user-attachments/assets/529d0e8e-43bf-47de-96b7-4e4535fb302d" />
 
-# Key Metrics (Top of the Page): Revenue, Profit, Total Orders, Top Region, Top Category.#
+# Key Metrics (Top of the Page): Revenue, Profit, Total Orders, Top Region, Top Category.
 
 - **Revenue:** The total amount of sales generated from all products during the selected period.
 - **Profit:** The total earnings remaining after deducting all associated costs from revenue.
@@ -122,13 +122,13 @@ The dashboard includes Year, Customer Name and Product Name slicers that allows 
 
 These interactive filters ensure that KPIs, charts and visuals adapt instantly, giving stakeholders a flexible view by narrowing the focus on a specific Year, Customer Name or Product Name.
 
-**Page 2: Sales and Profit Analysis**
+# **Page 2: Sales and Profit Analysis**
 
 **Business Goal:** Analyze sales and profitability trends by monitoring monthly revenue and profit, revenue by category, profit by product, profit margin by shipping mode, and revenue across states. This page is designed to help stakeholders understand sales and profitability patterns across time, product categories, products, shipping methods, and locations, enabling data-driven decisions to improve sales performance and profitability.
 
 <img width="1309" height="507" alt="Retail Store_2" src="https://github.com/user-attachments/assets/a48a3993-68df-42e6-9a53-524cf171107a" />
 
-# Key Metrics (Top of the Page): Revenue, Profit, Total Orders, Top Region, Top Category.#
+# Key Metrics (Top of the Page): Revenue, Profit, Total Orders, Top Region, Top Category.
 
 - **Revenue:** The total amount of sales generated from all products during the selected period.
 - **Profit:** The total earnings remaining after deducting all associated costs from revenue.
