@@ -164,7 +164,7 @@ The analysis of the retail store sales gave insights into performance, regional 
 - **Laptops** earned the most revenue at **$623,000**, followed by **Smartphones** at **$545,600** and **Tablets** at **$360,600**.
 - **Robert Brown** was the highest-spending customer at **$385,750**. **Jane Smith** was the lowest at **$323,300.**
 - **PayPal** was the leading payment type at **$415,400**, followed by **Credit Card** at **$392,100.** **Crypto** was the lowest at **$288,950.**
-- Among the five salespeople, **Charlie Black** was highest at **$204,750** and Bob White was lowest at **$143,114.**
+- Among the five salespeople, **Charlie Black** was highest at **$204,750** and *Bob White* was lowest at **$143,114.**
   
 # 2. Regional and Temporal Trends
 - The **West** region contributed the most, with **36.24%** of revenue (about *$644K*). *South* followed with **21.93%**, then Midwest with **21.55%** and *East* with **20.28%**.
@@ -211,9 +211,9 @@ Based on the analysis, the following steps can help strengthen retail strategy a
 
 This analysis is based on a dataset that appears to be fictional, and the following points may affect how far the insights can be relied on.
 
-– The dataset is small, with 1,000 orders over two years, and includes only five customers and five salespeople. Results reflect those individuals more than broad customer behavior.
-– The state map uses the same revenue range as the customer chart ($323,300 to $385,750), so it seems to repeat customer data rather than add a separate view.
-– The five salesperson values add up to $848,772, which equals total profit rather than total revenue. That chart may show profit under a revenue label and should be checked against the source data.
-– Monthly charts combine 2023 and 2024 unless a year is selected, and monthly figures were read from charts, so they are approximate.
-– The ship mode chart shows each mode's share of profit, not a margin rate for each mode.
-– There is no data on promotions, returns, operating costs or outside conditions such as the economy.
+- The dataset is small, with 1,000 orders over two years, and includes only five customers and five salespeople. Results reflect those individuals more than broad customer behavior.
+- The state map uses the same revenue range as the customer chart ($323,300 to $385,750), so it seems to repeat customer data rather than add a separate view.
+- The five salesperson values add up to $848,772, which equals total profit rather than total revenue. That chart may show profit under a revenue label and should be checked against the source data.
+- Monthly charts combine 2023 and 2024 unless a year is selected, and monthly figures were read from charts, so they are approximate.
+- The ship mode chart shows each mode's share of profit, not a margin rate for each mode.
+- There is no data on promotions, returns, operating costs or outside conditions such as the economy.
