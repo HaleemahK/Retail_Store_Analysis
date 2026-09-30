@@ -217,3 +217,239 @@ This analysis is based on a dataset that appears to be fictional, and the follow
 - Monthly charts combine 2023 and 2024 unless a year is selected, and monthly figures were read from charts, so they are approximate.
 - The ship mode chart shows each mode's share of profit, not a margin rate for each mode.
 - There is no data on promotions, returns, operating costs or outside conditions such as the economy.
+
+# Retail Store Analysis
+
+## Introduction
+
+This Retail Store Analysis report examines sales data and produces insights that help improve business performance.
+
+It aims to:
+
+- Understand sales trends (what sells, when, and how much).
+- Evaluate product performance (best and worst-selling items).
+- Analyze customer spending across customers, regions, and payment methods.
+- Track revenue and profitability.
+- Support data-driven decisions on pricing, stocking, and promotions.
+
+Overall, the goal is to turn raw retail data into useful insights that help the business increase sales, improve profit, and operate more efficiently.
+
+## Problem Statement
+
+The retail store generates significant sales across different products, regions, and customers, but lacks clear visibility into what drives revenue and profit performance. There is a need to analyze sales patterns, customer spending, product contribution, and regional performance to identify growth opportunities, improve profitability, and support data-driven decision-making.
+
+## Key Business Questions
+
+1. Which products generate the highest revenue and profit?
+2. Which category contributes most to overall sales?
+3. Who are the top customers, and how much do they contribute?
+4. Which salesperson drives the most revenue?
+5. Which region performs best in terms of revenue?
+6. How do revenue and profit vary by month and quarter across 2023 and 2024?
+7. Which payment methods generate the most revenue?
+8. What share of profit does each shipping mode contribute?
+9. Are there underperforming products or regions that need attention?
+10. How can the store increase revenue and improve profit based on these insights?
+
+## Dataset Overview
+
+This dataset contains **1,000 orders**. It captures the following information:
+
+| Field | Description |
+|---|---|
+| Order ID | Unique identifier for each transaction |
+| Order Date | Date the order was placed |
+| Customer ID | Unique ID assigned to each customer |
+| Customer Name | Name of the customer who made the purchase |
+| Address | Customer's street address |
+| City | City where the customer is located |
+| State | State or region of the customer |
+| Salesperson | Staff member responsible for the sale |
+| Region | Sales region (West, East, South, or Midwest) |
+| Country | Country where the customer resides |
+| Shipped Date | Date the order was shipped |
+| Shippers Name | Logistics company that transports and delivers the package |
+| Ship Mode | Shipping service type used (Economy, Express, or Standard) |
+| Ship Address | Delivery address |
+| Ship City | City of delivery |
+| Ship State | State of delivery |
+| Payment Type | Method used for payment (e.g., Cash, Credit Card, PayPal) |
+| Product Name | Name of the product purchased |
+| Category | Product category (Electronics, Wearables, or Accessories) |
+| Unit Price | Price of a single unit of the product |
+| Quantity | Number of units purchased |
+| Revenue | Total sales amount (Unit Price × Quantity) |
+| Shipping Fee | Cost charged for delivering the order |
+
+Profit is calculated as revenue less product and shipping costs.
+
+## Data Preparation
+
+To ensure accuracy, the dataset went through a series of cleaning and transformation steps before analysis. This work was done in Excel and Power Query, focusing on inconsistencies and preparing the data for visualization.
+
+### Key steps taken
+
+1. Loaded the dataset into Excel.
+2. Imported the dataset into Power Query for data cleaning and validation.
+3. Created a comprehensive Date Table for time-based analysis.
+4. Developed delivery and shipping metrics to measure logistics performance.
+5. Generated customer metrics to analyze customer value and purchasing behavior.
+6. Created product performance metrics to evaluate profitability, pricing, and sales trends.
+
+## Measures (DAX)
+
+Calculated measures were created with DAX (Data Analysis Expressions) to define key performance indicators (KPIs) and evaluate business performance. These measures are the foundation of the dashboard and support analysis of revenue, profitability, and product performance across time periods.
+
+### Measures used in the dashboard
+
+| Measure | What it measures |
+|---|---|
+| Total Revenue | Total sales generated across all transactions |
+| Total Profit | Overall profit after deducting product and shipping costs |
+| Profit Margin (%) | Profit as a percentage of revenue |
+| Order Count | Total number of orders placed |
+| Revenue per Product | Revenue contribution of each product |
+| Product Profit | Profit generated by each product |
+
+### Measures built for further analysis
+
+These measures were created but are not displayed on the two dashboard pages:
+
+- **Average Order Value:** average amount spent per order.
+- **Customer Lifetime Revenue:** total revenue generated by each customer.
+- **Purchase Frequency:** how often customers placed orders.
+- **Sales Volume per Product:** total units sold for each product.
+- **Product Profit Margin (%):** profitability at the product level.
+- **On-Time Delivery Rate (%):** share of orders delivered within the expected timeframe.
+- **Average Delivery Time:** average number of days taken to deliver orders.
+- **Shipping Cost Percentage (%):** shipping costs as a share of revenue.
+- **Shipping Efficiency Score:** delivery performance measured against shipping costs and timelines.
+
+**Purpose:** These measures support interactive reporting and trend analysis by month, quarter, and year, giving stakeholders insight into sales performance, product profitability, and delivery efficiency.
+
+## Data Analysis and Visualization
+
+This section presents the two dashboard pages, which give a view of the store's sales performance across products, customers, regions, and payment methods. They help stakeholders, marketers, sales teams, and directors identify top-performing products, customers, and regions, and monitor revenue and profit trends.
+
+### Key metrics (both pages)
+
+Both pages carry the same five KPI cards at the top:
+
+- **Revenue:** The total amount of sales generated from all products during the selected period.
+- **Profit:** The total earnings remaining after deducting product and shipping costs from revenue.
+- **Total Orders:** The total number of orders placed by customers, showing the volume of sales transactions.
+- **Top Region:** The region that generated the highest revenue, showing the strongest market.
+- **Top Category:** The product category that contributed the highest revenue, showing the most successful product segment.
+
+These KPIs give a high-level view of business performance. They help stakeholders quickly spot key revenue drivers, monitor operational success, and make informed decisions.
+
+### Slicers (both pages)
+
+Both pages include Year, Customer Name, and Product Name slicers that allow users to filter and interact with the data. KPIs and charts update instantly, so stakeholders can narrow the view to a specific year, customer, or product.
+
+## Page 1: Revenue Performance Overview
+
+**Business Goal:** Analyze overall business performance by monitoring revenue, profit, order volume, top-performing regions, and product categories. This page helps stakeholders understand sales performance across products, customers, salespeople, regions, and payment methods, enabling data-driven decisions to improve revenue growth and profitability.
+
+![Retail Store Dashboard Page 1: revenue by product, salesperson, category, customer, region, and payment type](https://github.com/user-attachments/assets/529d0e8e-43bf-47de-96b7-4e4535fb302d)
+
+### Visuals
+
+- **Product vs Revenue (Column Chart):** Compares revenue generated by different products. It helps identify the best and lowest-performing products, supporting inventory planning and product management.
+- **Salesperson vs Revenue (Bar Chart):** Shows the contribution of each salesperson. It supports performance evaluation by identifying top performers and areas for improvement.
+- **Category vs Revenue (Pie Chart):** Shows the percentage contribution of each product category to total revenue. It helps stakeholders see which categories drive the largest share of sales.
+- **Customer Name vs Revenue (Bar Chart):** Shows revenue generated by individual customers. It helps identify high-value customers and supports retention strategies.
+- **Region vs Revenue (Pie Chart):** Shows how revenue is distributed across regions. It helps management identify strong markets and areas that need more focus.
+- **Payment Type vs Revenue (Column Chart):** Shows revenue generated through each payment method. It gives insight into customer payment preferences.
+
+## Page 2: Sales and Profit Analysis
+
+**Business Goal:** Analyze sales and profitability by monitoring monthly revenue and profit, revenue by category, profit by product, profit by shipping mode, and revenue across states. This page helps stakeholders understand sales and profit patterns across time, categories, products, shipping methods, and locations, enabling data-driven decisions to improve sales performance and profitability.
+
+![Retail Store Dashboard Page 2: monthly revenue and profit, category revenue, product profit, ship mode, quarterly revenue, and state revenue](https://github.com/user-attachments/assets/a48a3993-68df-42e6-9a53-524cf171107a)
+
+### Visuals
+
+- **Revenue and Profit vs Month (Clustered Column-Line Chart):** Compares revenue and profit across months. It helps stakeholders spot monthly trends, including periods of high and low performance.
+- **Category vs Revenue (Bar Chart):** Compares revenue generated by each product category. It shows which categories contribute the most and least to total revenue.
+- **Product vs Profit (Column Chart):** Compares profit generated by each product. It shows the most and least profitable products.
+- **Ship Mode vs Profit Margin (Donut Chart):** Shows how profit is split across shipping modes. It helps stakeholders see how much each shipping method contributes to the total.
+- **Revenue vs Year, Quarter and Month (Line Chart):** Shows revenue trends across years, quarters, and months. It helps track changes over time and recognize periods of higher or lower sales.
+- **State vs Revenue (Map):** Shows revenue distribution across states. It helps identify states with higher and lower revenue and areas that may need more focus.
+
+## Key Analysis Findings
+
+The analysis of the retail store sales gave insights into performance, regional and time trends, profitability, and individual products.
+
+### 1. Performance Analysis
+
+- Total revenue reached **$1,776,850** across **1,000 orders**, an average of about **$1,777** per order.
+- Total profit was **$848,772**, a profit margin of **47.8%**.
+- Electronics was the top category with **$1,529,200** in revenue, about **86%** of the total. Wearables brought in **$157,800** and Accessories **$89,850**.
+- Laptops earned the most revenue at **$623,000**, followed by Smartphones at **$545,600** and Tablets at **$360,600**.
+- Robert Brown was the highest-spending customer at **$385,750** (**21.7%** of revenue). Jane Smith was the lowest at **$323,300** (**18.2%**).
+- PayPal was the leading payment type at **$415,400**, followed by Credit Card at **$392,100**. Crypto was the lowest at **$288,950**.
+- On the salesperson chart, Charlie Black was highest at **$204,750** and Bob White was lowest at **$143,114** (see Limitations).
+
+### 2. Regional and Temporal Trends
+
+- The West region contributed the most, with **36.24%** of revenue (about **$644K**). South followed with **21.93%**, then Midwest with **21.55%** and East with **20.28%**.
+- With 2023 and 2024 combined, monthly revenue was lowest in February at about **$120K** and highest in July and December at about **$175K**.
+- April was also a strong month at about **$165K**, and it is when monthly profit peaked at about **$90K**.
+- Monthly profit stayed between about **$55K** and **$90K**, so profit moved less than revenue from month to month.
+- In the year, quarter, and month view, revenue in both 2023 and 2024 rose and fell between roughly **$55K** and **$100K** a month, with no clear steady climb.
+
+### 3. Profitability Insights
+
+- Smartphones generated the highest profit at **$286,886**, just ahead of Laptops at **$286,103**. Laptops earned **$77,400** more in revenue, so Smartphones earned more profit per dollar of revenue.
+- Smartphones had the best profit margin at **52.6%**. Headphones had the lowest at **39.6%**.
+- Economy shipping made up **94.24%** of the ship mode profit share. Express contributed **3.10%** and Standard **2.65%**.
+- Electronics products (Laptops, Smartphones, and Tablets) produced **$741,020** of the **$848,772** total profit, about **87%**.
+
+### 4. Product-Specific Analysis
+
+| Product | Revenue | Profit | Profit Margin |
+|---|---:|---:|---:|
+| Laptop | $623,000 | $286,103 | 45.9% |
+| Smartphone | $545,600 | $286,886 | 52.6% |
+| Tablet | $360,600 | $168,031 | 46.6% |
+| Smartwatch | $157,800 | $72,176 | 45.7% |
+| Headphones | $89,850 | $35,576 | 39.6% |
+
+- Laptops and Smartphones together bring in **$1,168,600**, about **66%** of all revenue.
+- Tablets rank third with **$360,600** in revenue and a **46.6%** margin.
+- Smartwatches, the only Wearables product, beat Headphones on revenue, profit, and margin. Headphones, the only Accessories product, is the smallest line.
+
+## Overall Insights
+
+- Almost half of every revenue dollar (47.8%) ends up as profit, so the store is healthy on profitability.
+- Electronics carries the store. Laptops, Smartphones, and Tablets bring in about 86% of revenue.
+- Smartphones are the most efficient product. They lead on profit and margin while earning less revenue than Laptops.
+- The West is the strongest market. It leads by a wide gap, while the other three regions sit close together at 20% to 22%.
+- Sales change through the year. February is the weakest month and July and December are the strongest, which points to a need for seasonal planning.
+- Revenue is spread evenly across customers. Each of the five accounts for roughly 18% to 22% of the total, so no single customer dominates.
+- Economy shipping dominates. Express and Standard together make up under 6% of the profit share.
+
+## Recommendations
+
+Based on the analysis, the following steps can help strengthen retail strategy and revenue growth.
+
+1. Keep investing in Laptops and Smartphones through steady restocking and targeted promotion, since they drive most of the revenue and profit.
+2. Give Smartphones extra promotion, as they earn the highest margin of any product.
+3. Review Headphone pricing and costs to lift its 39.6% margin, and consider bundling it with Smartphone and Laptop sales.
+4. Grow the Wearables line. Smartwatch margin is close to Laptops, but it makes up only about 9% of revenue.
+5. Plan stock and campaigns around the calendar: prepare for the July and year-end peaks, and run promotions in February and the other low months.
+6. Keep marketing and distribution focused on the West, and test what works there in the East, Midwest, and South.
+7. Look at why Express and Standard shipping are so little used, and check whether pricing or delivery options could be improved.
+
+## Limitations
+
+This analysis is based on a dataset that appears to be fictional, and the following points may affect how far the insights can be relied on.
+
+- The dataset is small, with 1,000 orders over two years, and includes only five customers and five salespeople. Results reflect those individuals more than broad customer behavior.
+- The state map uses the same revenue range as the customer chart ($323,300 to $385,750), so it seems to repeat customer data rather than add a separate view.
+- The five salesperson values add up to $848,772, which equals total profit rather than total revenue, so that chart may be showing profit. It is reported here as labeled on the dashboard.
+- Monthly charts combine 2023 and 2024 unless a year is selected, and monthly values are approximate. Year-on-year totals are not compared in this report.
+- The ship mode chart shows each mode's share of profit, not a margin rate for each mode.
+- Profit reflects product and shipping costs only. There is no data on promotions, returns, other operating costs, or outside conditions such as the economy.
+
